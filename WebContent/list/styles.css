@@ -1,0 +1,46 @@
+.list__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.list__table {
+  width: 90%;
+}
+
+.list__table__row {
+  width: 100%;
+  display: flex;
+}
+
+.list__table__row__1 {
+  width: 20%;
+  border: 1px solid gray;
+  padding: 7px;
+}
+
+.list__table__row__2 {
+  width: 40%;
+  border: 1px solid gray;
+  padding: 7px;
+}
+
+.list__table__row__3 {
+  width: 20%;
+  border: 1px solid gray;
+  padding: 7px;
+}
+
+.list__table__row__4 {
+  width: 20%;
+  border: 1px solid gray;
+  padding: 7px;
+}
+.list__table__row__5 {
+  width: 20%;
+  border: 1px solid gray;
+  padding: 7px;
+}

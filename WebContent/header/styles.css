@@ -1,0 +1,12 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header__container > span,
+.header__container > input {
+  margin: 10px;
+}
