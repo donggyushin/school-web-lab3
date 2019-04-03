@@ -9,11 +9,15 @@ System.out.println(logged); %>
     function checkCheckBoxes() {
       var subjects = [];
       $.each($("input[name='code']:checked"), function() {
+        // name 이 code 인 것중에서 체크된것들을 subjects 라는 배열에 모두 넣어주고
         subjects.push($(this).val());
       });
       if (subjects.length == 0) {
+        // 배열의 길이가 0 이라면 아무과목도 선택하지 않은 것임.
         alert("한 개 이상의 과목을 신청해주세요. ");
         return false;
+        // return을 false 로 해주면 submit button 의
+        // onclick 함수를 무효화 시켜줄 수 있음.
       }
       return true;
     }

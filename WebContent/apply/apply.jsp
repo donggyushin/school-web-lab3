@@ -61,11 +61,15 @@ pageEncoding="UTF-8"%> <% request.setCharacterEncoding("UTF-8"); %>
       <div class="apply__card__row__score">학점</div>
       <div class="apply__card__row__grade">학년</div>
     </div>
+
     <% String[] subjects = request.getParameterValues("code"); int totalScore =
     0; if(subjects != null){ for(int i = 0 ; i < subjects.length; i ++) { String
     s1 = subjects[i]; %>
     <div class="apply__card__row">
       <div class="apply__card__row__number"><%=i+1%></div>
+      <!-- 
+      , 를 이용해서 배열을 하나 더 만들어준다. 
+     -->
       <% String[] s2 = s1.split(","); totalScore = totalScore +
       Integer.parseInt(s2[2]); %>
       <div class="apply__card__selected__subject"><%=s2[0]%></div>
