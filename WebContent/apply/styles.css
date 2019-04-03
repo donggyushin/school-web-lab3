@@ -1,0 +1,15 @@
+.apply__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  background-color:"red";
+}
+
+.apply__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.apply__card__row {
+  display: flex;
+}

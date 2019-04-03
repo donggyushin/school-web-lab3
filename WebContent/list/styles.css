@@ -44,3 +44,7 @@
   border: 1px solid gray;
   padding: 7px;
 }
+
+.list__submit__button {
+  widows: 100px;
+}
